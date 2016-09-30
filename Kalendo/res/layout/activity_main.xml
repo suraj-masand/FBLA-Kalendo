@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+    
+    <HorizontalScrollView
+        android:id="@+id/horiz_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:id="@+id/horiz_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+            
+        </LinearLayout>
+        
+    </HorizontalScrollView>
+    
+    <ScrollView
+        android:id="@+id/today_scroll"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horiz_scroll"
+        android:layout_above="@id/bottom_bar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/today_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/today_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"/>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#343434"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/list_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/list_view"
+            android:cropToPadding="false"
+            android:onClick="toList"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/list"/>
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/home_view"
+            android:cropToPadding="false"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_on"/>
+        
+        <ImageButton
+            android:id="@+id/twitter_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/twitter_view"
+            android:cropToPadding="false"
+            android:onClick="toTwitterFeed"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/twitter"/>
+
+        <ImageButton
+            android:id="@+id/cal_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cal_view"
+            android:cropToPadding="false"
+            android:onClick="toCal"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cal"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

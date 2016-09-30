@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TwitterFeed"
+    android:id="@+id/rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+   <LinearLayout
+       android:id="@+id/twitter_options"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp">
+       
+       <Spinner
+   			android:id="@+id/spinner1"
+   	 		android:layout_width="0dp"
+  			android:layout_height="fill_parent"
+  			android:layout_weight="1"
+     		android:entries="@array/twitters"
+  			android:gravity="start"
+  			android:popupBackground="#ffffff"
+   			android:prompt="@string/twitter_prompt"
+   			android:spinnerMode="dialog"/>
+
+       <Button
+       		android:id="@+id/submit_btn"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:background="@drawable/mybutton"
+       		android:onClick="updateTwitter"
+       		android:padding="10dp"
+       		android:text="@string/submit"/>
+   		
+  	</LinearLayout>
+   	    
+    <WebView
+        android:id="@+id/timeline_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twitter_options"
+        android:layout_above="@id/bottom_bar"/>
+
+	<LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#343434"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/list_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/list_view"
+            android:cropToPadding="false"
+            android:onClick="toList"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/list"/>
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/home_view"
+            android:cropToPadding="false"
+            android:onClick="toHome"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home"/>
+        
+        <ImageButton
+            android:id="@+id/twitter_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/twitter_view"
+            android:cropToPadding="false"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/twitter_on"/>
+
+        <ImageButton
+            android:id="@+id/cal_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cal_view"
+            android:cropToPadding="false"
+            android:onClick="toCal"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cal"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

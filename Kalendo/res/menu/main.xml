@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fbla1.MainActivity">
+
+    <item
+        android:id="@+id/app_info"
+        android:title="@string/app_info"
+        app:showAsAction="never"/>    
+
+</menu>
