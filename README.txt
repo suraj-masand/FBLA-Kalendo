@@ -1,4 +1,4 @@
-﻿
+
 
 ********************************************************************************
 *   Competitors: Katharine Nelson and Suraj Masand			       *
@@ -18,6 +18,11 @@ ________________________________________________________________________________
 
 
 The accompanying mobile application, Kalendo, is an Android application created by Katharine Nelson and Suraj Masand from Alpharetta High School for FBLA's Mobile Application Development competition at the 2015 National Leadership Conference. This app is designed for Android smartphones but is runnable on most android tablets.
+
+Kalendo is available from the Google Play Store. Simply follow the link and download the app.
+
+	https://play.google.com/store/apps/details?id=com.alpharettafbla.kalendo
+
 
 With its simple design, Kalendo allows for students at Alpharetta High School to view the school's upcoming events. Designed with navigability in mind, it connects to the school's Google calendar and displays the events in three main views: a today view which shows the schedule for the current day, a list view which shows events for the next three months, and a calendar view which allows users to select a specific date and see the events. Users can also choose from a list of Twitter accounts from the school to stay up-to-date with Alpharetta High School's social media. Current Twitter options include @AHSRaiderFBLA - the school's largest student organization, @FultonCoSchools - the twitter for the school district (as Alpharetta High School does not have its own Twitter account), and @RaiderSport - the official account for the Alpharetta athletics department.
 
